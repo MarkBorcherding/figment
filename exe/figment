@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'rainbow'
+
+colors = %w(
+  FF0000 FF1700 FF2E00 FF4500 FF5C00 FF7300 FE8C00 FDA500 FCBF00 FBD800 FAF200
+  F8F400 F6F700 F5F900 F3FC00 F2FF00 B5FF0A 79FF15 3CFF20 00FF2B 00FF5B 00FF8C
+  00FFBD 00FFEE 00EDF2 00DBF6 00C9FA 00B7FF 008BFF 0060FF 0034FF 0009FF 1706FF
+  2F04FF 4602FF 5E00FF 5B00FF 5900FF 5700FF 5500FF
+)
+
+colors += colors.reverse
+
+ARGF.each do |line|
+  colors << colors.shift
+  line_colors = colors.cycle
+  line.chars.each { |c| print Rainbow(c).color line_colors.next }
+end
