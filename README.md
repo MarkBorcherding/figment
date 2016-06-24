@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-    figlent This is amazing | figment
+    figlet This is amazing | figment
 
 ## Development
 
