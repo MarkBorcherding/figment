@@ -1,7 +1,7 @@
 # Figment
 
 
-![](screenshot.png)
+![](/screenshots/chuck_norris.png)
 
 ## Installation
 
@@ -22,6 +22,8 @@ Or install it yourself as:
 ## Usage
 
     figlet This is amazing | figment
+
+![](/screenshots/before_after.png)
 
 ## Development
 
