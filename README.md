@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-    figlet This is amazing | figment
+    figlet This is awesome | figment
 
 ![](/screenshots/before_after.png)
 
